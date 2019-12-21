@@ -1,0 +1,60 @@
+.new-tweet {
+  margin-bottom: 3em;
+  padding: 0;
+}
+
+.new-tweet h2 {
+  margin: 0;
+  padding: 0.25em;
+}
+
+/* Inside Form */
+#form-inline {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+#form-inline textarea {
+  margin: 10px;
+  width: 90%;
+  height: auto;
+  resize: none;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 5px;
+  background-color: #f4f1ec;
+  font-weight: 700;
+}
+
+#form-inline input {
+  float: left;
+  margin-left: 5%;
+  background-color: rgb(80, 80, 228);
+  font-family: 'Bungee', cursive;
+  color: white;
+  border-width: 0px;
+  border-radius: 5px;
+}
+
+/* Counter Related */
+#form-inline span {
+  float: right;
+  margin-right: 5%;
+  font-family: 'Bungee', cursive;
+}
+
+.plus-char {
+  color: #545149;
+}
+
+.minus-char {
+  color: rgb(168, 54, 54);
+}
+
+/* Error Messages */
+#error-msg {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}

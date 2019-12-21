@@ -1,0 +1,101 @@
+/* Article Hover State */
+article.tweet:hover {
+  box-shadow: 5px 10px;
+  font-weight: bold;
+}
+article.tweet:hover .article-avatar-pic img {
+  opacity: 1;  
+}
+article.tweet:hover i {
+  opacity: 1;  
+}
+article.tweet:hover .article-avatar-username h4 {
+  opacity: 0.6;  
+}
+
+
+/* Article Tweet Format */
+article.tweet {
+  width: 95%;
+  border: solid 5px;
+  border-color: rgb(169, 169, 169);
+  border-radius: 10px;
+  margin: 0 auto;
+  height: auto;
+  padding: 1%;
+  margin-bottom: 2em;
+}
+
+
+/* Header Related */
+article.tweet header {
+  background-color: #f4f1ec;
+  width: 98%;
+  margin: 1% auto;
+  height: 80px;
+}
+.article-avatar-pic {
+  float: left;
+  height: 70px;
+  margin: 5px;
+}
+.article-avatar-pic img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  opacity: 0.5;
+}
+.article-avatar-name {
+  float: left;
+  height: 70px;
+  margin: 5px;
+  display:table;
+}
+.article-avatar-name h3{
+  font-weight: 300;
+  display: table-cell; 
+  vertical-align: middle;
+}
+.article-avatar-username {
+  float: right;
+  height: 60px;
+  margin: 10px;
+  display: table;
+}
+.article-avatar-username h4 {
+  font-weight: 400;
+  opacity: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* Context Related */
+.context {
+  width: 98%;
+  border-bottom: 5px;
+  border-bottom-style: solid;
+  border-color: rgb(169, 169, 169);
+  margin: 1% auto;
+}
+.context p {
+  width: 95%;
+  margin: 1% auto;
+}
+
+
+/* Footer Related */
+article.tweet footer {
+  justify-content: space-between;
+  display: flex;
+  width: 94%;
+  margin: 0 auto;
+}
+.icons {
+  display: flex;
+  width: 15%;
+  justify-content: space-evenly;
+}
+i {
+  opacity: 0.5;
+}

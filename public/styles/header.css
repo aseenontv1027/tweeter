@@ -1,0 +1,15 @@
+header {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(255, 196, 0, 0.603);
+  margin-top: 120px;
+}
+
+.avatar-pic {
+  text-align: center;
+}
+
+.avatar-name {
+  text-align: center;
+}

@@ -1,0 +1,49 @@
+nav {
+  background: #4056A1;
+  top: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  height: 120px;
+  z-index: 1;
+  color: #ffffff;
+  padding: 1.5em;
+}
+
+.nav-bar-logo {
+  font-family: 'Bungee', cursive;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.right-nav-container {
+  float: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.write-new-tweet-arrow:hover {
+  color: red;
+}
+
+.write-new-tweet-arrow {
+  text-align: center;
+  cursor: pointer;
+}
+
+.fa-angle-double-down {
+  animation: 2s ease 0s infinite normal none running arrow;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translatey(0px);
+  }
+  50%  {
+    transform: translatey(8px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

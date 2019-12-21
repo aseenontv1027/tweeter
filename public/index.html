@@ -1,29 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
+    <!-- External Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <!-- New Tweet CSS -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <!-- Tweet Article CSS -->
+    <link rel="stylesheet" href="/styles/tweet-article.css" type="text/css" />  
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <!-- Composer Char Counter -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- Navbar Sliding Selector -->
+    <script type="text/javascript" src="/scripts/navbar-sliding.js"></script>
+    <!-- Icons Javascripts to fetch icons -->
+    <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js" data-auto-replace-svg="nest"></script>
+
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span class="nav-bar-logo">tweeter</span>
+      <span class="right-nav-container">
+        <span class="write-new-tweet"><b>Write</b> a new tweet</span>
+        <span class="write-new-tweet-arrow"><i class="fas fa-angle-double-down"></i></span>
+      </span>
     </nav>
-
+    <header>
+      <div class="avatar-pic">
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div class="avatar-name">
+          <h2>Your Name</h2>
+      </div>
+    </header>
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form id="form-inline" action="/tweets" method="POST">
+          <textarea name="text" placeholder="What are you humming about?"></textarea>
+          <br>
+          <input type="submit" value="Tweet">
+          <span>140</span>
+        </form>
+        <div id="error-msg">
+        </div>
+      </section>
+      <section id="tweets-container" class="articles">
+        <!-- <article class="tweet">
+          <header>
+            <div class="article-avatar-pic">
+              <img src="https://i.imgur.com/nlhLi3I.png">
+            </div>
+            <div class="article-avatar-name">
+              <h3>Your Name</h3>
+            </div>
+            <div class="article-avatar-username">
+              <h4>@Lazzeri</h4>
+            </div>
+          </header>
+          <div class="context">
+            <p>
+              dummy content. Where is my sandwich? Where is my sandwich? Where is my sandwich? Where is my sandwich? Where is my sandwich? 
+            </p>
+          </div>
+          <footer>
+            <div class="time">
+              10 days ago
+            </div>
+            <div class="icons">
+              <div class="flag-icon"><i class="fas fa-flag"></i></div>
+              <div class="share-icon"><i class="fas fa-retweet"></i></div>
+              <div class="like-icon"><i class="fas fa-heart"></i></div>
+            </div>
+          </footer>
+        </article> -->
+      </section>
+    </main>
   </body>
 </html>
